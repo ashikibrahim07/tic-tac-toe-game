@@ -35,9 +35,9 @@ To run the game locally, follow these steps:
 
 2. **Navigate to the Project Directory:**
 
-```bash
+   ```bash
    cd tic-tac-toe-game
-```
+   ```
 
 3. **Open the index.html File:**
 
