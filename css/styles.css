@@ -10,6 +10,17 @@ body {
   background: linear-gradient(135deg, #64ffda, #0a192f);
   color: #0a192f;
   position: relative;
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .board {
@@ -78,12 +89,8 @@ body {
 }
 
 #details {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   font-size: 24px;
   color: #0a192f;
-  cursor: pointer;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -107,4 +114,72 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    margin-bottom: 10px;
+  }
+
+  #details {
+    position: static;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 8px;
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  #restart {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .board {
+    grid-template-columns: repeat(3, 60px);
+    grid-gap: 6px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  #restart {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  footer a {
+    font-size: 10px;
+  }
 }
