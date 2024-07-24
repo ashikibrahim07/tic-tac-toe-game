@@ -15,9 +15,9 @@ Welcome to the Tic Tac Toe game! 🎮 This is a classic game of Tic Tac Toe buil
 
 - **Interactive Gameplay**: Play Tic Tac Toe against another player.
 - **Responsive Design**: The game adjusts to different screen sizes.
-- **Game Rules**: Displays the game rules and updates.
+- **Game Rules**: Displays the game rules.
 - **Restart Option**: Restart the game with a single click.
-- **Information Icon**: Access game rules and upcoming updates.
+- **Information Icon**: Access game rules.
 
 ## Demo
 
