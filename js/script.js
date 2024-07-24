@@ -45,7 +45,7 @@ function checkWin() {
     const [a, b, c] = pattern;
     if (board[a] !== "" && board[a] === board[b] && board[a] === board[c]) {
       gameActive = false;
-      resultElement.textContent = `Player ${currentPlayer} wins!`;
+      resultElement.textContent = `${currentPlayer} WINNER!`;
       resultElement.classList.add("show");
       return;
     }
@@ -53,7 +53,7 @@ function checkWin() {
 
   if (!board.includes("")) {
     gameActive = false;
-    resultElement.textContent = "It's a tie!";
+    resultElement.textContent = "XO It's a DRAW!";
     resultElement.classList.add("show");
   }
 }
