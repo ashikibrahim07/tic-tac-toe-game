@@ -76,3 +76,9 @@ function restartGame() {
     cell.textContent = "";
   });
 }
+
+//Copyright Year
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+document.getElementById("copyright").textContent =
+  "\u00A9 " + year + " XO XO XO. Created by";

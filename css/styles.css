@@ -116,7 +116,7 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 320px) {
